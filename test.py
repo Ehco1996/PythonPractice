@@ -1,10 +1,9 @@
-a = {'the': 4, 'a': 3}
-b = ['the']
+a = {'周浩': 4, '真': 3}
 
-for ex in b:
-    if ex in a.keys():
-        del a[ex]
 
+for i in list(a):
+    if len(i) <=1:
+        del a[i]
 
 
 

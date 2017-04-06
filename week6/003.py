@@ -5,8 +5,6 @@
 最后用csv 文件进行输出。
 '''
 
-import turtle
-
 
 # 替换文本文件中的所有标点符号 为“ ” 并将所有字符串变为小写
 def replacePunc(line):
@@ -19,7 +17,7 @@ def replacePunc(line):
 
 
 def processLine(line, wordcounts):
-    # 处理每一行的数据，将其标注化
+    # 处理每一行的数据，将其标准化
     line = replacePunc(line)
     # 分离出每个单词 ,每个单词以列表形式保存
     words = line.split()
@@ -31,13 +29,27 @@ def processLine(line, wordcounts):
             wordcounts[word] = 1
 
 
+# 从本机读取文件，并处理，追加成字典，保存在临时字典中。
 def CountNmbers(wordcounts):
-    with open("./week6/hamlet.txt", 'r+') as f:
+    with open("./week6/hamlet.txt", 'r') as f:
         for line in f:
-
             line = replacePunc(line)
             processLine(line, wordcounts)
     return wordcounts
+
+
+# 排除字的列表
+excludes = ['the', 'and']
+
+# 从单词字典里 遍历排除排除列表里的单词
+
+
+def excludeslist(wordcounts, excludes):
+    for ex in excludes:
+        if ex in wordcounts.keys():
+            del wordcounts[ex]
+    return wordcounts
+
 
 
 # 初始化存放 单词的字典：
@@ -46,25 +58,11 @@ wordcounts = {}
 CountNmbers(wordcounts)
 
 
-#排除字的列表
-excludes = ['the','and']
-
-#从单词字典里 遍历排除排除列表里的单词
-def excludeslist(wordcounts,excludes):
-    for ex in excludes:
-        if ex in wordcounts.keys():
-            del wordcounts[ex]
-    return wordcounts
-
-wordcounts = excludeslist(wordcounts,excludes)
+# 从列表中排除不想要的字
+wordcounts = excludeslist(wordcounts, excludes)
 
 # 生成统计词频的列表，方便排序,
 counts = list(wordcounts.items())
-
- 
-
-#从列表中排除不想要的字
-
 
 
 # 将列表按照 每一项的第二项排序，
@@ -76,14 +74,12 @@ list.sort 方法有两个参数，第一个为key，指向一个迭代累的函�
 counts.sort(key=lambda x: x[1], reverse=True)
 
 
-
-
 # 打印出前十个平率出现最高的单词
 for i in range(10):
     print(counts[i])
 
 
-#将结果写入文件
+# 将结果写入文件
 with open("./week6/hamlet_word.csv", 'w+') as f:
     for i in counts:
-        f.write("单词："+str(i[0])+' 次数：'+str(i[1])+'\n')
+        f.write("单词：" + str(i[0]) + ' 次数：' + str(i[1]) + '\n')
