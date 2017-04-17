@@ -24,12 +24,10 @@ class Projectile():
         self.xpos = 0.0
         self.ypos = height
         theta = radians(angle)
-<<<<<<< HEAD
+
         self.xvel = vel * cos(theta) 
-=======
+
         self.xvel = vel * cos(theta)
->>>>>>> c5fc4c57fda9010ecf868da75453948af807be50
-        self.yvel = vel * sin(theta)
 
     def update(self, time):
         self.xpos = self.xpos + time * self.xvel
