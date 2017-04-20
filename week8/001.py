@@ -1,3 +1,7 @@
+'''
+尝试使用thinker库
+绘制一个聊天窗口
+'''
 from tkinter import *
 import time
  
