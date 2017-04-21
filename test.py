@@ -1,10 +1,11 @@
-a = {'周浩': 4, '真': 3}
+class Student():
+    def __str__(self):
+        return "1"
+    pass
 
+def test(parm='123'):
+    a = dict(parm = Student)
+    print(a[parm]())    
+    return a
 
-for i in list(a):
-    if len(i) <=1:
-        del a[i]
-
-
-
-print(a)
+test()
