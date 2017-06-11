@@ -1,9 +1,10 @@
 '''
 用面向对象的方式
 重写001的模拟体育竞技
-
 '''
+
 import random
+
 
 class PEgame():
     def __init__(self, count, powa, powb):
