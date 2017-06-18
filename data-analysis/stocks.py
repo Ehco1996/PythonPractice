@@ -37,7 +37,7 @@ sf['month'] = lis1
 print(sf)
 
 # 找到顺丰股票涨的日子,并按照月份统计
-increase = sf[sf.close > sf.open]['month'].value_counts()
+increase = sf[sf.close > sf.open['month'].value_counts()
 
 print('下面是每月涨幅的天数')
 print(increase)
