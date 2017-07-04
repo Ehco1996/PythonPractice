@@ -29,7 +29,7 @@ def find_pepple_showup_cont(num=10):
     return showup_counts[:num]
 
 
-'''
+
 # 简单的展示一下数据
 showup_10 = find_pepple_showup_cont()
 print(showup_10)
@@ -54,7 +54,7 @@ plt.ylabel('出现的次数')
 plt.title('庆余年人物出现频次图')
 plt.savefig('rwpc.jpg')
 plt.show()
-'''
+
 
 # 利用结巴分词来进行中文分词
 import jieba
@@ -81,9 +81,8 @@ plt.show()
 wordcloud.to_file('qun_gjc.jpg')
 
 
-
 # 将关键词加入结巴分词
-for tag,x in tags:
+for tag, x in tags:
     jieba.add_word(tag)
 
 # 将小说中的姓名加入结巴分词的关键词
@@ -91,25 +90,22 @@ for name in names:
     jieba.add_word(name)
 
 # 加入中文停用词列表
-with open ('stopwords.txt','r') as f:
+with open('stopwords.txt', 'r') as f:
     STOPWORD = [word.strip() for word in f.readlines()]
 
 # 开始进行分词
 print('开始进行分词。。。。')
-sentence  = []
+sentence = []
 for line in content:
-    seg_list = list(jieba.cut(line,cut_all=False))
+    seg_list = list(jieba.cut(line, cut_all=False))
     for seg in seg_list:
         if seg not in STOPWORD:
             sentence.append(seg)
-    
 
 
 print(sentence)
 
 # 将分词结果写入文件:
-with open('result.txt','w+') as f:
+with open('result.txt', 'w+') as f:
     for line in sentence:
-        f.write(line+'\n')
-
-
+        f.write(line + '\n')
