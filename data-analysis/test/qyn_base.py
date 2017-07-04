@@ -29,7 +29,7 @@ def find_pepple_showup_cont(num=10):
     return showup_counts[:num]
 
 
-
+'''
 # 简单的展示一下数据
 showup_10 = find_pepple_showup_cont()
 print(showup_10)
@@ -54,7 +54,7 @@ plt.ylabel('出现的次数')
 plt.title('庆余年人物出现频次图')
 plt.savefig('rwpc.jpg')
 plt.show()
-
+'''
 
 # 利用结巴分词来进行中文分词
 import jieba
@@ -69,7 +69,7 @@ print('关键词:')
 for k, v in tags:
     print('关键词：{}   权重：{:.3f}'.format(k, v))
 
-
+'''
 # 利用关键词制作图云：
 from wordcloud import WordCloud
 txt = ''.join([v + ',' for v, x in tags])
@@ -79,7 +79,7 @@ plt.imshow(wordcloud)
 plt.axis('off')
 plt.show()
 wordcloud.to_file('qun_gjc.jpg')
-
+'''
 
 # 将关键词加入结巴分词
 for tag, x in tags:
@@ -95,17 +95,26 @@ with open('stopwords.txt', 'r') as f:
 
 # 开始进行分词
 print('开始进行分词。。。。')
+# 我们期待的分词结果是保存着小说每一句话的分词结果
+# 即一个二元数组，这将方便我们一会进行模型的训练
 sentence = []
 for line in content:
     seg_list = list(jieba.cut(line, cut_all=False))
+    unique_list = []
+    # 开始去除停用词
     for seg in seg_list:
         if seg not in STOPWORD:
-            sentence.append(seg)
+            unique_list.append(seg)
+    sentence.append(unique_list)
+print('分词完毕')
 
 
-print(sentence)
-
-# 将分词结果写入文件:
-with open('result.txt', 'w+') as f:
-    for line in sentence:
-        f.write(line + '\n')
+# 开始训练模型
+import gensim
+# Gensim中的Word2Vec期望的输入是经过分词的 句子列表。即是一个包含句子分词结果的二维数组
+print('开始训练模型。。。这个时间很长，去喝杯咖啡吧')
+model = gensim.models.Word2Vec(
+    sentence, size=100, window=5, min_count=4, workers=4)
+print('训练完毕。正在将模型保存到本地')
+model.save('qyn.model')
+print('Okey ')
