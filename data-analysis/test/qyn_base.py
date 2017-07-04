@@ -29,7 +29,6 @@ def find_pepple_showup_cont(num=10):
     return showup_counts[:num]
 
 
-'''
 # 简单的展示一下数据
 showup_10 = find_pepple_showup_cont()
 print(showup_10)
@@ -38,6 +37,7 @@ print(showup_10)
 import pandas as pd
 show = pd.DataFrame(showup_10, columns=['names', 'counts'])
 print(show)
+
 
 # 用matplotlib绘制直方图展示：
 import matplotlib.pyplot as plt
@@ -54,7 +54,7 @@ plt.ylabel('出现的次数')
 plt.title('庆余年人物出现频次图')
 plt.savefig('rwpc.jpg')
 plt.show()
-'''
+
 
 # 利用结巴分词来进行中文分词
 import jieba
@@ -69,7 +69,6 @@ print('关键词:')
 for k, v in tags:
     print('关键词：{}   权重：{:.3f}'.format(k, v))
 
-'''
 # 利用关键词制作图云：
 from wordcloud import WordCloud
 txt = ''.join([v + ',' for v, x in tags])
@@ -79,7 +78,6 @@ plt.imshow(wordcloud)
 plt.axis('off')
 plt.show()
 wordcloud.to_file('qun_gjc.jpg')
-'''
 
 # 将关键词加入结巴分词
 for tag, x in tags:
