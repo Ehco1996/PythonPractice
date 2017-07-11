@@ -37,8 +37,8 @@ def OneTest(hp=[]):
 
 counter = 0
 
-# 开始模拟10000次实验，从而判断概率
-for i in range(10000):
+# 开始模拟1000000次实验，从而判断概率
+for i in range(1000000):
     # 构建总的血量池 
     total = bigbrother + zamao + tuteng
     if '*' in OneTest(total):
@@ -47,11 +47,11 @@ for i in range(10000):
     else:
         print('大表哥死了')
 
-print("\n\n 大表哥存活的概率是: {}%".format(counter / 10000.0 * 100))
+print("\n\n 大表哥存活的概率是: {}%".format(counter / 1000000.0 * 100))
 
 '''
 OUT：
 
-大表哥存活的概率是: 75.299%
+大表哥存活的概率是: 75.0445%
 
 '''
