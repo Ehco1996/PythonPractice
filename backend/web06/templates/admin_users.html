@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>amdin - users</title>
+</head>
+<body>
+    <form action="/admin/user/update" method="post">
+        <input name="id">
+        <input name="password">
+        <button type="submit">修改密码</button>
+    </form>
+
+    {% for u in users %}
+    <div>
+        {{ u.id }}, {{ u.username }}, {{ u.password }}
+    </div>
+    {% endfor %}
+</body>
+</html>
