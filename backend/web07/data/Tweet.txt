@@ -1,0 +1,7 @@
+[
+  {
+    "user_id": 1,
+    "content": "hello tweet",
+    "id": 1
+  }
+]

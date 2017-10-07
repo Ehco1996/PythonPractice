@@ -1,0 +1,13 @@
+[
+  {
+    "tweet_id": 1,
+    "id": 1,
+    "content": "楼主说得对",
+    "user_id": 2
+  },  {
+    "tweet_id": 1,
+    "id": 2,
+    "content": "lbvu is right",
+    "user_id": 2
+  }
+]

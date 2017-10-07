@@ -1,0 +1,427 @@
+14:45:55 完整请求
+14:45:55 
+14:45:55 请求结束
+14:45:55 完整请求
+14:45:55 GET /tweet/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:45:55 请求结束
+14:45:55 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:45:55 path and query /tweet/index {}
+14:45:55 kwargs,  {'id': -1} <class 'dict'>
+14:45:55 完整响应
+14:45:55 HTTP/1.x 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:45:55 响应结束
+14:47:31 完整请求
+14:47:31 
+14:47:31 请求结束
+14:47:31 完整请求
+14:47:31 GET /tweet/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:47:31 请求结束
+14:47:31 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:47:31 path and query /tweet/index {}
+14:47:31 kwargs,  {'id': -1} <class 'dict'>
+14:47:31 完整响应
+14:47:31 HTTP/1.x 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:47:31 响应结束
+14:47:35 完整请求
+14:47:35 GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:47:35 请求结束
+14:47:35 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:47:35 path and query / {}
+14:47:35 完整响应
+14:47:35 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+</body>
+</html>
+14:47:35 响应结束
+14:47:41 完整请求
+14:47:41 GET /weibo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:47:41 请求结束
+14:47:41 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:47:41 path and query /weibo/index {}
+14:47:41 完整响应
+14:47:41 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:47:41 响应结束
+14:47:58 完整请求
+14:47:58 
+14:47:58 请求结束
+14:47:58 完整请求
+14:47:58 GET /weibo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:47:58 请求结束
+14:47:58 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:47:58 path and query /weibo/index {}
+14:47:58 完整响应
+14:47:58 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:47:58 响应结束
+14:48:31 start at :3000
+14:48:51 start at :3000
+14:49:17 start at :3000
+14:49:20 完整请求
+14:49:20 GET /weibo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:49:20 请求结束
+14:49:20 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:49:20 path and query /weibo/index {}
+14:49:20 kwargs,  {'id': -1} <class 'dict'>
+14:49:20 完整响应
+14:49:20 HTTP/1.x 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:49:20 响应结束
+14:51:29 完整请求
+14:51:29 
+14:51:29 请求结束
+14:52:13 完整请求
+14:52:13 GET /register HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:52:13 请求结束
+14:52:13 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:52:13 path and query /register {}
+14:52:13 完整响应
+14:52:13 HTTP/1.1 210 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+    <h1>注册</h1>
+    <form action="/register" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">注册</button>
+    </form>
+</body>
+</html>
+14:52:13 响应结束
+14:52:18 完整请求
+14:52:18 POST /register HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 27
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/register
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+username=ehco&password=ehco
+14:52:18 请求结束
+14:52:18 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:52:18 path and query /register {}
+14:52:18 form debug ['username=ehco', 'password=ehco'] 2
+14:52:18 kwargs,  {'username': 'ehco'} <class 'dict'>
+14:52:18 完整响应
+14:52:18 HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+14:52:18 响应结束
+14:52:18 完整请求
+14:52:18 GET /login HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/register
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+
+14:52:18 请求结束
+14:52:18 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:52:18 path and query /login {}
+14:52:18 login, cookies {'Hm_lvt_a1bff0c59495d14b9ab89245886a59b9': '1498551755,1499954209', 'csrftoken': 's68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid': 's8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user': '3safa3saci4g2ddl'}
+14:52:18 完整响应
+14:52:18 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+14:52:18 响应结束
+14:52:21 完整请求
+14:52:21 POST /login HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 27
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=3safa3saci4g2ddl
+
+username=ehco&password=ehco
+14:52:21 请求结束
+14:52:21 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=3safa3saci4g2ddl']
+14:52:21 path and query /login {}
+14:52:21 login, cookies {'Hm_lvt_a1bff0c59495d14b9ab89245886a59b9': '1498551755,1499954209', 'csrftoken': 's68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid': 's8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user': '3safa3saci4g2ddl'}
+14:52:21 form debug ['username=ehco', 'password=ehco'] 2
+14:52:21 kwargs,  {'username': 'ehco'} <class 'dict'>
+14:52:21 kwargs,  {'username': 'ehco'} <class 'dict'>
+14:52:21 headers response {'Content-Type': 'text/html', 'Set-Cookie': 'user=9akish8s88g8f8l9'}
+14:52:21 完整响应
+14:52:21 HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=9akish8s88g8f8l9
+Location: /
+
+
+14:52:21 响应结束
+14:52:21 完整请求
+14:52:21 GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=9akish8s88g8f8l9
+
+
+14:52:21 请求结束
+14:52:21 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=9akish8s88g8f8l9']
+14:52:21 path and query / {}
+14:52:21 完整响应
+14:52:21 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+</body>
+</html>
+14:52:21 响应结束
+14:52:24 完整请求
+14:52:24 POST /add HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 6
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=9akish8s88g8f8l9
+
+task=1
+14:52:24 请求结束
+14:52:24 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=9akish8s88g8f8l9']
+14:52:24 path and query /add {}
+14:52:24 form debug ['task=1'] 1
+14:52:24 完整响应
+14:52:24 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+14:52:24 响应结束
+14:52:24 完整请求
+14:52:24 GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=9akish8s88g8f8l9
+
+
+14:52:24 请求结束
+14:52:24 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=9akish8s88g8f8l9']
+14:52:24 path and query / {}
+14:52:24 完整响应
+14:52:24 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            <a href="/delete?id=1">删除</a>
+            <a href="/edit?id=1">修改</a>
+            1 : 1
+        </div>
+    
+</body>
+</html>
+14:52:24 响应结束
+14:52:53 完整请求
+14:52:53 GET /weibo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,da;q=0.2,la;q=0.2
+Cookie: Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209; csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP; sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77; user=9akish8s88g8f8l9
+
+
+14:52:53 请求结束
+14:52:53 cookie ['Hm_lvt_a1bff0c59495d14b9ab89245886a59b9=1498551755,1499954209', 'csrftoken=s68aMlmRl7FQ9Het6XW36OM5GVyyQY9igFS9WEcI5QVAvDLE3KHeVT4r5bSMyEMP', 'sessionid=s8ksdu8iac2gembfjcjf7cjhae9e6v77', 'user=9akish8s88g8f8l9']
+14:52:53 path and query /weibo/index {}
+14:52:53 kwargs,  {'id': -1} <class 'dict'>
+14:52:53 完整响应
+14:52:53 HTTP/1.x 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+14:52:53 响应结束

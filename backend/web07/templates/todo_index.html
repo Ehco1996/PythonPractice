@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo index</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    {% for t in todos %}
+        <div>
+            <a href="/todo/delete?id={{ t.id }}">删除</a>
+            <a href="/todo/edit?id={{ t.id }}">修改</a>
+            {{ t.id }} : {{ t.task }} : {{ t.user_id }}
+        </div>
+    {% endfor %}
+</body>
+</html>

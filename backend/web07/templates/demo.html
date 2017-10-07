@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jinja2 demo</title>
+</head>
+<body>
+    <!-- 变量替换 -->
+    <h1>{{ name }}</h1>
+
+    <!-- 循环 -->
+    {% for n in numbers %}
+        <span class="number">{{ n }}</span>
+    {% endfor %}
+
+    <!-- 循环加对象/字典访问 -->
+    <div class="user-container">
+    {% for u in users %}
+        <div class="user-cell">
+            <span>{{ u.name }}</span>
+            <span>{{ u.id }}</span>
+        </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
