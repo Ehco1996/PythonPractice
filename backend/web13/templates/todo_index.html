@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Todo</title>
+    <!-- 静态文件放在 /static 文件夹中 -->
+    <!-- 引用路径是 /static/... -->
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <style type="text/css">
+    .todo-table {
+        margin: 0 auto;
+    }
+    .center {
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Todo</h1>
+        <!-- 注意这里 的 url_for 也是需要加上蓝图名字前缀的 -->
+        <form action={{ url_for("todo.add") }} method="post">
+            <input type="text" placeholder="Add Todo" name="title">
+            <input class="pure-button pure-button-primary" type="submit" value="Add">
+        </form>
+    </div>
+
+    <table class="todo-table pure-table pure-table-horizontal pure-table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for t in todos %}
+            <tr>
+                <td>{{ t.id }}</td>
+                <td>{{ t.title }}</td>
+                <td>{{ t.ct }}</td>
+                <!-- url_for 可以传递参数，先匹配动态路由，如果动态路由匹配失败则变成 query 参数 -->
+                <td><a href={{ url_for('todo.delete', todo_id=t.id) }}>delete</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
