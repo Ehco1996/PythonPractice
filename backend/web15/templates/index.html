@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <h1>{{ user }}</h1>
+    <h2>
+        <a href="{{ url_for('.profile') }}">个人资料页面</a>
+    </h2>
+    <form method="post" action="{{ url_for('.register') }}">
+        <input name="username">
+        <br>
+        <input name="password">
+        <br>
+        <button type="submit">注册</button>
+    </form>
+    <form method="post" action="{{ url_for('.login') }}">
+        <input name="username">
+        <br>
+        <input name="password">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+</body>
+</html>

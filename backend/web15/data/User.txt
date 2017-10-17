@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "username": "gua",
+    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
+  },
+  {
+    "id": 2,
+    "username": "z19960202",
+    "password": "d5d4fd385fb50c12dbe8eeb3f69782944f2a221e9fc5b5c1b9390af1bd348818"
+  }
+]

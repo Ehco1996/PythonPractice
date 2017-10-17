@@ -1,0 +1,10 @@
+14:13:55 kwargs,  {'id': -1} <class 'dict'>
+14:13:56 kwargs,  {'id': -1} <class 'dict'>
+14:13:56 kwargs,  {'id': -1} <class 'dict'>
+14:14:04 kwargs,  {'username': 'z19960202'} <class 'dict'>
+14:14:04 debug 1
+14:14:04 kwargs,  {'id': -1} <class 'dict'>
+14:14:11 kwargs,  {'username': 'z19960202'} <class 'dict'>
+14:14:11 kwargs,  {'id': 2} <class 'dict'>
+14:14:15 kwargs,  {'id': 2} <class 'dict'>
+14:21:09 kwargs,  {'id': 2} <class 'dict'>

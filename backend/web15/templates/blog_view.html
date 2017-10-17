@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ blog.title }}</title>
+</head>
+<h1>{{ blog.title }}</h1>
+<h3>{{ blog.author }}</h3>
+<p>{{ blog.content }}</p>
+
+<form method="post" action="comment/new">
+    <input type="text" name="author" placeholder="author">
+    <input type="text" name="content" placeholder="content">
+    <input type="hidden" name="blog_id" value={{ blog.id }}>
+    <button type="submit">提交评论</button>
+</form>
+
+<div>
+    {% for c in comments %}
+        <div>{{ c.content }} @ {{ c.author }}</div>
+    {% endfor %}
+</div>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<form method="post" action="/comment/add">
+    <input class="form-control" type="text" name="content" placeholder="comment">
+    <input class="form-control" type="text" name="author" placeholder="author">
+    <button class="btn btn-default" type="submit">提交留言</button>
+</form>
+
+<div>
+    {% for c in comments %}
+    <div class="bg-success">
+        {{ c.content }} for {{ c.author }} @ {{ c.create_time }}
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>

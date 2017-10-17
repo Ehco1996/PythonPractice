@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>评论界面</title>
+</head>
+
+
+<body>
+    <form method="post" action={{ url_for( ".add") }}>
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="content" placeholder="content">
+        <button type="submit">提交</button>
+    </form>
+    <hr>
+    <div>
+        {% for c in comments %}
+        <div>
+            {{ c.content }} from {{ c.author }} @{{ c.create_time }}
+        </div>
+        {% endfor %}
+
+    </div>
+</body>
+
+</html>

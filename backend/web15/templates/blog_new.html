@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表新博文</title>
+</head>
+<body>
+<form method="POST" action={{ url_for(".add") }}>
+    <input type="text" name="author" placeholder="author">
+    <input type="text" name="title" placeholder="title">
+    <br>
+    <textarea name = "content" placeholder="content">
+    </textarea>
+    <br>
+    <button type="submit">发布</button>
+</form>
+
+</body>
+</html>
