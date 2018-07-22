@@ -115,6 +115,4 @@ ENV/
 # mkdocs documentation
 /site
 .DS_Store
-
-# End of https://www.gitignore.io/api/data,python
-.DS_Store
+.vscode/
